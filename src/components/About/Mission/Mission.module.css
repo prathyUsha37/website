@@ -1,0 +1,36 @@
+.heading {
+  font-size: 30px;
+  max-width: 300px;
+}
+
+.description {
+  font-size: 16px;
+  max-width: 500px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 30px;
+}
+
+.leftContainer {
+  width: 30%;
+  display: flex;
+  align-items:flex-end;
+}
+
+.rightContainer {
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.contactUs {
+  font-size: 16px;
+  width: fit-content;
+}
+
+.video {
+  border-radius: 10px;
+}
+
