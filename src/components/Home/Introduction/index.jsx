@@ -13,10 +13,17 @@ function Introduction() {
   const theme = useMantineTheme();
 
   return (
-    <Group className={classes.wrapper}>
+    <Group
+      className={classes.wrapper}
+      style={{
+        backgroundColor: '#FFF8E1', // Light Cream Background
+        margin: 'auto', // 10px left and right margin
+        maxWidth: 'calc(100% - 20px)', // Ensures it stays within the screen width (10px left + 10px right)
+      }}
+    >
       <Stack className={classes.leftContainer}>
         <Text className={classes.heading}>
-          {'Connecting Ambitions, Building Careers'}
+          {'Your Trusted Partner in Talent and Technology.'}
         </Text>
         <Text className={classes.description}>
           {`Looking to build your dream team or take the next step in your career? 
