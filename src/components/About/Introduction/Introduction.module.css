@@ -1,0 +1,17 @@
+
+.heading {
+  font-size: 30px;
+  max-width: 300px;
+}
+.description {
+  font-size: 16px;
+  max-width: 60%;
+  margin-bottom: 100px;
+}
+.wrapper {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}

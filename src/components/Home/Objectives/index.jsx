@@ -11,34 +11,38 @@ const data = [
   {
     heading: 'Talent Acquisition Made Simple',
     description: `We help businesses find the right talent by understanding their unique requirements.
-     Our vast network and tailored approach ensure a perfect match for every role.`
+     Our vast network and tailored approach ensure a perfect match for every role.`,
+    outlook: 'blue'
   },
   {
     heading: 'Empowering Job Seekers',
     description: `Discover your next career move with us. We connect talented professionals with companies 
-    that align with their skills, ambitions, and goals, opening doors to exciting opportunities.`
+    that align with their skills, ambitions, and goals, opening doors to exciting opportunities.`,
+    outlook: 'green'
   },
   {
     heading: 'Personalized Staffing Solutions',
     description: `Whether you're hiring for a temporary project or building a long-term team, 
-    our customized staffing solutions cater to businesses of all sizes and industries.`
+    our customized staffing solutions cater to businesses of all sizes and industries.`,
+    outlook: 'yellow'
   },
   {
     heading: 'Seamless Recruitment Process',
     description: `From submitting your requirements to successfully onboarding candidates, 
-    we simplify every step of the recruitment journey saving time and resources.`
+    we simplify every step of the recruitment journey saving time and resources.`,
+    outlook: 'orange'
   }
 ]
 
 function Card(props) {
-  const { data: { heading, description } } = props || {};
+  const { data: { heading, description, outlook } } = props || {};
   const theme = useMantineTheme();
 
   return (
-    <motion.div
+    <motion.div style={{backgroundColor: theme.colors[outlook][4]}}
       whileHover={{
         scale: [null, 1.1],
-        boxShadow: [null, `0 0 10px ${theme.colors.gray[4]}`],
+        boxShadow: [null, `0 0 10px ${theme.colors[outlook][4]}`],
       }}
       transition={{ duration: 0.3 }}
       className={classes.card}
