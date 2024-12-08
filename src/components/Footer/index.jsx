@@ -37,7 +37,7 @@ export function Footer() {
             <Text className={classes.name} mt={10}>Support</Text>
             <Anchor className={classes.description} mt={5} href={'/'} underline="never">Help Center</Anchor>
             <Anchor className={classes.description} href={'/'} underline="never">Policies</Anchor>
-            <Anchor className={classes.description} href={'/'} underline="never">PTerms & Conditions</Anchor>
+            <Anchor className={classes.description} href={'/'} underline="never">Terms & Conditions</Anchor>
           </Stack>
 
           <Stack gap={2}>

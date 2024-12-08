@@ -7,6 +7,7 @@ import {
 } from '@mantine/core';
 import classes from './Introduction.module.css';
 import { IoIosArrowForward } from "react-icons/io";
+import intro from '/intro.mp4';
 
 function Introduction() {
   const theme = useMantineTheme();
@@ -30,7 +31,16 @@ function Introduction() {
           {'Contact Us'}
         </Button>
       </Stack>
-
+      <Stack className={classes.rightContainer}>
+        <video
+          className={classes.video}
+          src={intro}
+          width={'100%'}
+          autoPlay={true}
+          loop
+          muted
+        />
+      </Stack>
     </Group>
   );
 }
