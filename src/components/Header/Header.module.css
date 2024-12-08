@@ -1,0 +1,14 @@
+.header {
+  background-color: var(--mantine-color-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 101;
+  border-bottom: 0.75px solid var(--mantine-color-gray-4);
+  height: 60px;
+}

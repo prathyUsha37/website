@@ -1,6 +1,8 @@
 import './App.css'
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, createTheme, MantineThemeProvider } from '@mantine/core';
 import RouteInfo from './components/RouteInfo';
+import { Header } from './components/Header';
+import '@mantine/core/styles.css';
 
 function App() {
 
