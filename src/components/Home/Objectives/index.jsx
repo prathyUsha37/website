@@ -12,64 +12,60 @@ const data = [
     heading: 'Talent Acquisition Made Simple',
     description: `We help businesses find the right talent by understanding their unique requirements.
      Our vast network and tailored approach ensure a perfect match for every role.`,
-    outlook: 'cyan', // Ambient cyan for a calming feel
+    outlook: 'blue'
   },
   {
     heading: 'Empowering Job Seekers',
     description: `Discover your next career move with us. We connect talented professionals with companies 
     that align with their skills, ambitions, and goals, opening doors to exciting opportunities.`,
-    outlook: 'teal', // Fresh teal for an empowering message
+    outlook: 'green'
   },
   {
     heading: 'Personalized Staffing Solutions',
     description: `Whether you're hiring for a temporary project or building a long-term team, 
     our customized staffing solutions cater to businesses of all sizes and industries.`,
-    outlook: 'yellow', // Friendly yellow for warmth and energy
+    outlook: 'yellow'
   },
   {
     heading: 'Seamless Recruitment Process',
     description: `From submitting your requirements to successfully onboarding candidates, 
     we simplify every step of the recruitment journey saving time and resources.`,
-    outlook: 'orange', // Vibrant orange for action-oriented focus
-  },
-];
+    outlook: 'orange'
+  }
+]
 
 function Card(props) {
   const { data: { heading, description, outlook } } = props || {};
   const theme = useMantineTheme();
 
   return (
-    <motion.div
-      style={{
-        backgroundColor: theme.colors[outlook][3], // Softer tones for pleasant visuals
-        color: theme.colors.dark[9], // Ensure good contrast for readability
-        padding: '20px',
-        borderRadius: '10px',
-      }}
+    <motion.div style={{backgroundColor: theme.colors[outlook][4]}}
       whileHover={{
         scale: [null, 1.1],
-        boxShadow: [null, `0 0 15px ${theme.colors[outlook][4]}`],
+        boxShadow: [null, `0 0 10px ${theme.colors[outlook][4]}`],
       }}
       transition={{ duration: 0.3 }}
       className={classes.card}
     >
       <Stack>
-        <Text className={classes.heading} style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>
+        <Text className={classes.heading}>
           {heading}
         </Text>
-        <Text className={classes.description} style={{ fontSize: '1rem', lineHeight: 1.5 }}>
+        <Text className={classes.description}>
           {description}
         </Text>
       </Stack>
     </motion.div>
-  );
+  )
 }
 
 function Objectives() {
+  const theme = useMantineTheme();
+
   return (
-    <Stack className={classes.wrapper} style={{ gap: '20px' }}>
-      <Group justify="space-between" style={{ gap: '20px', flexWrap: 'wrap' }}>
-        {data.map((d) => (
+    <Stack className={classes.wrapper}>
+      <Group justify='space-between'>
+        {data.map(d => (
           <Card data={d} key={d.heading} />
         ))}
       </Group>
