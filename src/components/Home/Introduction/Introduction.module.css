@@ -1,11 +1,41 @@
 .heading {
   font-size: 30px;
   max-width: 300px;
+ 
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 50% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+  -webkit-text-fill-color: transparent;
 }
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 
 .description {
   font-size: 16px;
   max-width: 500px;
+  font-style: italic;
+  font-weight: 400;
+  font-display:inherit;
 }
 
 .wrapper {

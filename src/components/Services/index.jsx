@@ -12,7 +12,7 @@ function Services() {
   const theme = useMantineTheme();
 
   return (
-    <Stack bg={theme.colors.gray[1]} pt={100}>
+    <Stack style={{ background: "linear-gradient(#ced4da, #dbe4ff)", width: "95%", margin: "auto" }} pt={100}>
       <Center mih={'100vh'}>
         <Stack w='100%' spacing={50}>
           <Introduction/>

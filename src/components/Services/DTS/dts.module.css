@@ -5,10 +5,12 @@
   .description {
     font-size: 16px;
     max-width: 500px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   .wrapper {
-    width: 100%;
+    width: 80%;
     padding: 40px;
+    margin: auto;
   }
   .leftContainer {
     width: 60%;

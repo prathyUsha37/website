@@ -9,7 +9,10 @@ function Introduction() {
     return (
         <Stack className={classes.wrapper}>
             <Text className={classes.heading}>
-                {'Who We Provide'}
+                <Text size="xl"
+                    fw={900}
+                    variant="gradient"
+                    gradient={{ from: 'blue', to: 'cyan', deg: 90 }}>What We Provide</Text>
             </Text>
             <Text className={classes.description}>
                 {`As a leading software staffing consultancy, we specialize in connecting top-tier tech talent with organizations in need of cutting-edge expertise.

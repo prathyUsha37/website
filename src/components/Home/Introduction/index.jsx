@@ -7,7 +7,7 @@ import {
 } from '@mantine/core';
 import classes from './Introduction.module.css';
 import { IoIosArrowForward } from "react-icons/io";
-import intro from '/intro.mp4';
+import intro from "./nw.mp4";
 
 function Introduction() {
   const theme = useMantineTheme();
@@ -19,9 +19,9 @@ function Introduction() {
           {'Connecting Ambitions, Building Careers'}
         </Text>
         <Text className={classes.description}>
-          {`Looking to build your dream team or take the next step in your career? 
+          {`"Looking to build your dream team or take the next step in your career? 
           We’re here to help! Whether you’re a company seeking exceptional professionals 
-          or a job seeker exploring opportunities, we make the connections that matter.`}
+          or a job seeker exploring opportunities, we make the connections that matter."`}
         </Text>
         <Button
           className={classes.contactUs}
